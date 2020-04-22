@@ -1,0 +1,12 @@
+This kernel module creates the /sys/devices/platform/mts-io
+enumeration of the features for the MTAC ENF (Xaptum ENF Access)
+boards.
+
+This driver requires the mtac.ko driver loaded first.  depmod should
+take care of this.
+
+Documentation for this board is here:
+
+An init script can look in:
+/lib/modules/$(uname -r)/extra/mtac_enf.ko
+to find the driver.
