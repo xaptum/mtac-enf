@@ -145,10 +145,6 @@ static bool enf_setup(enum ap port) {
 		return false;
 	}
 
-	gpio_set_value(AT91_PIN_PB12, 0);
-	mdelay(500);
-	gpio_set_value(AT91_PIN_PB12, 1);
-
 	return true;
 }
 
